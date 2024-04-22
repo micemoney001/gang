@@ -1,11 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGOLIA ✋</title>
+    <link rel="stylesheet" href="passcode.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        .hg {
+            display: flex;
+            margin-bottom: 150px;
+        }
+
+        h1,
+        .zz {
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        #op {
+            background-color: rgb(58, 65, 111);
+            color: white;
+        }
+
+        table {
+            justify-content: center;
+            /* border: 1px groove; */
+        }
+
+        .lkb {
+            /* border: 1px groove; */
+            /* margin-left: 150px; */
+            margin-top: 80px;
+        }
+
+        #vc {
+            border: 1px groove;
+            width: fit-content;
+        }
+
+        .bt1 {
+            background-color: blue;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 10px;
+            border: 1px groove;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .bt2 {
+            background-color: blue;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 10px;
+            border: 1px groove;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .pop {
+            text-align: center;
+            /* margin-left: 50px; */
+        }
+
+        .nb {
+            width: 90%;
+            margin: 10px;
+            padding-block: 7px;
+            border: 1px inset;
+            border-radius: 5px;
+            box-shadow: inset 10px 10px 10px whitesmoke;
+        }
+
+        .nb::placeholder {
+            padding-left: 20px;
+            display: block;
+        }
+
+        .grt {
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            /* margin-left: 140px; */
+        }
+
+        .bt3 {
+            padding-left: 200px;
+            padding-right: 220px;
+            padding-top: 10px;
+            padding-bottom: 8px;
+            margin-left: 8px;
+            margin-top: 30px;
+            background-color: white;
+            border: 1px groove;
+            box-shadow: inset 8px 8px 10px white;
+        }
+
+        .fd {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .bp {
+            /* text-align: center; */
+            margin-left: 19%;
+        }
+
+        /* .da {
+            margin-left: 220px;
+        } */
+
+        .za {
+            margin: 10px;
+        }
+
+        .bt4 {
+            border: 1px groove;
+            padding: 20px;
+        }
+
+        .zw {
+            margin-left: 80px;
+        }
+
+        @media screen and (max-width:768px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            #op {
+                display: none;
+            }
+
+            .bt1 {
+                /* margin-left: 25%; */
+            }
+
+            .bt2 {
+                /* margin-left: 25%; */
+            }
+
+            .bt3 {
+                padding-inline: 10%;
+                padding-block: 5px;
+            }
+
+            .Ikb {
+                margin-left: -20%;
+
+
+            }
+
+            #vc {
+                width: 90%;
+                margin: auto;
+            }
+
+            .nb {
+                width: 90%;
+                border: 1px groove;
+                box-shadow: inset 10px 10px 10px whitesmoke;
+                margin-left: 8%;
+            }
+
+            .grt {
+
+                font-size: 20px;
+            }
+
+            #oyp {
+                overflow-x: hidden;
+            }
+
+            .fd {
+                font-size: 15px;
+            }
+
+            .tust {
+                display: none;
+            }
+
+            .bt4 {
+                border: 1px groove;
+                padding: 10px;
+            }
+
+            .zw {
+                margin-left: 80px;
+            }
+
+            #tyty {
+                flex-direction: column;
+            }
+        }
+
+        .ju {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .juy {
+            margin-left: 25px;
+        }
+
+        .fq {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .bt4 {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <p>CAVET: This is just an assignment given to a student</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" id="op">
+                <h3>Get started for free</h3>
+                <p>No credit card required!</p>
+                <div class="hg">
+                    <div class="mn">
+                        <img src="img/rules-dd2f49f9d71e218f30069ec851e8f46dc9239ebc704006ce96295117291119c2.svg"
+                            alt="">
+                    </div>
+                    <div class="lk">
+                        <h5>Manage Your Data</h5>
+                        <p>Use official API clients, integrations, CLI <br>tool or rest API to create & update your
+                            <br>indexed data.
+                        </p>
+                    </div>
+                </div>
+                <div class="hg">
+                    <div class="">
+                        <img src="img/query-suggestions-69604bdf4d39799e8fb32c9d348570a8397c49243144e952c94d2488dffb7e9c.svg"
+                            alt="">
+                    </div>
+                    <div class="bv">
+                        <h5>Build UI</h5>
+                        <p>Create beautiful UI with pre-built <br>component libraries for instant search and
+                            <br>autocomplete.
+                        </p>
+                    </div>
+                </div>
+                <div class="hg">
+                    <div>
+                        <img src="img/analytics-13624c814db6c8cf64267118b0e3e36c88cf956d3930402fb1b08cefbcc16429.svg"
+                            width="50px" alt="">
+                    </div>
+                    <div class="bv">
+                        <h5>
+                            Configure Analytics
+                        </h5>
+                        <p>Optimize and evaluate how your search is <br>performing, keywords with no results and
+                            <br>recommendations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 d-flex justify-content-center" id="oyp">
+                <div class="lkb">
+                    <h1>
+                        <a href="dashoooo.html"><img
+                                src="img/algolia-logo-light-2fc6ad36a48bf09ddd3136a97e71b523494ce964c348c150a628d29e94f15400 (1).svg"
+                                alt="" width="170px" class="zz"></a>
+                    </h1>
+                    <div id="vc">
+                        <table>
+                            <p class="grt my-3">Get started for free</p>
+                            <div class="my-3 d-flex justify-content-center" id="tyty">
+                                <button class="bt1" id="xz">
+                                    <img src="img/icon-google-eb3b68c0c83304be350ff0317bdebf72b83a73cadab51463de53f6620fadf204.svg"
+                                        alt="" width="20px">Continue with google</button>
+                                <button class="bt2"><img
+                                        src="img/icon-github-light-3fb24ba8388654ea7dcf400d6b263debd70ef1b9ca18141f6d42f2d6e9688449.svg"
+                                        alt="" width="20px">Continue with Github
+                                </button>
+                            </div>
+                            <p class="pop my-3">Or enter your details manually</p>
+                            <div>
+                                <input type="text" class="nb" placeholder="Enter your email" id="userr" oninput="userval()"><br>
+                                <span id="erroruser"></span><br>
+                                <input type="password" class="nb" placeholder="Enter your password" id="passs" oninput="passval()"><br>
+                                <span id="errorpass"></span>
+                                <div class="ju my-3">
+                                    <input type="checkbox" class="fq" id="checkk">
+                                    <label style="line-height: 23px; " class="juy">
+                                        I accept Algolia's Terms of Service, Build Plan Terms and Service Limits,
+                                        and have read
+                                        <br> Algolia's Privacy Policy.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="my-3">
+                                <p>
+                                    <button class="bt4"><input type="checkbox" style="margin-right: 10px;">I'm a
+                                        robot
+                                        <img src="img/recap.png" alt="" width="40px" class="zw"></button>
+                                </p>
+                            </div>
+                            <div class="my-3 text-center">
+                                <p><button class="bt3 shadow" type="submit"><a href="dashoooo.html">Sing in up with your email</a></button></p>
+                            </div>
+                            <div class="my-5 text-center">
+                                <p><label for="" class="fd">Already have an account? <a href="#">log in</a></label>
+                                </p>
+                            </div>
+                        </table>
+                    </div>
+                    <div class="tust text-center">
+                        <h3 class="bp mt-5">Trusted By</h3>
+                        <div class="da mt-n1">
+                            <img src="img/vercel-397043552d7b9c51854cedd71132ad8bb87f05e93c9f1946673f3cf151775fee.svg"
+                                alt="" width="80px" class="za">
+                            <img src="img/twilio-958e35d354a6c7593ab71a3b44c2d5012861818469897c9786223dfd5489fb5e.svg"
+                                alt="" width="80px" class="za">
+                            <img src="img/medium-b767fe4a3a9afae116dc65222d7401292243a0862a727a7ac7cf8f16285bd759.svg"
+                                alt="" width="80px" class="za">
+                            <img src="img/coursera-52298b7ab5078920dbb46b389180fedc7d9285c466b2edf0549ca388063103e7.svg"
+                                alt="" width="80px" class="za">
+                            <img src="img/gitbook-19b56af114d9ace5e2522c42557e96f6fa4c0a58d053a66cda98e8d103657106.svg"
+                                alt="" width="80px" class="za">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let userr = document.querySelector('#userr');
+            let passs = document.querySelector('#passs');
+            let erroruser=document.querySelector('#erroruser');
+            let errorpass=document.querySelector('#errorpass')
+            let checkk = document.querySelector('#checkk');
+            const nameval=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const passsval=/^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{5,15}$/;
+
+            let gogo;
+            function userval(){
+                if(!userr.value){
+                    erroruser.innerHTML='Input your username'
+                    erroruser.style.color='red'
+                    gogo=false;
+                }
+                else if(!userr.value.match(nameval)){
+                    erroruser.innerHTML='wrong input'
+                    erroruser.style.color='red'
+                    gogo=false;
+                }
+                else{
+                    erroruser.innerHTML='Done'
+                    erroruser.style.color='green'
+                }
+            }
+
+            function passval(){
+                if(!passs.value){
+                    errorpass.innerHTML='Input your password'
+                    errorpass.style.color='red'
+                    gogo=false;
+                }
+                else if(!passs.value.match(passsval)|| passs.value.length<8 || passs.value.length >12 ){
+                    errorpass.innerHTML='wrong input'
+                    errorpass.style.color='red'
+                    gogo=false;
+                }
+                else{
+                    errorpass.innerHTML='Done'
+                    errorpass.style.color='green'
+                }
+            }
+
+
+        </script>
+
+        <div id="bg" style="display: flex; margin-top: 10px; cursor: pointer;">
+            <p>NEXT</p>
+            <button><a href="se.html">1</a></button>
+            <button><a href="Expo.html">2</a></button>
+            <button><a href="dash.html">3</a></button>
+            <button><a href="domain.html">4 </a></button>
+            <button><a href="pay pal.html">5</a></button>
+            <button><a href="message bird.html">6</a></button>
+            <button><a href="third.html">7</a></button>
+            <button><a href="index.html">8</a></button>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GODS</title>
 </head>
-<body style="background-color: black;">
+<body style="background-color: black; color: white;">
     <div >
         <div style="text-align: center;">
             <h2><a href="passcode.html" style="text-decoration: none;">Welcome To </a></h2>
@@ -31,4 +453,4 @@
         </div>
     </div>
 </body>
-</html>
+</html> -->
